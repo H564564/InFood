@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.infood">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.INFOOD">
+        <activity android:name=".wareActivity"/>
+        <activity android:name=".stockActivity" />
+        <activity android:name=".indexActivity" />
+        <activity android:name=".timeoutActivity" />
+        <activity android:name=".usefoodActivity" />
+        <activity android:name=".recipeActivity" />
+        <activity android:name=".recipeInexActivity" />
+        <activity android:name=".memberActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

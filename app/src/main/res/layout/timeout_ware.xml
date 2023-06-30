@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#E5E5E5">
+
+    <ImageView
+        android:id="@+id/timedetail"
+        android:layout_width="379dp"
+        android:layout_height="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gray_line" />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="54dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timedetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/timedetail"
+        app:layout_constraintTop_toTopOf="@+id/timedetail"
+        app:layout_constraintVertical_bias="0.425"
+        app:srcCompat="@drawable/error1" />
+
+    <TextView
+        android:id="@+id/timeout_ware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="待分類"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/timedetail"
+        app:layout_constraintStart_toStartOf="@+id/timedetail"
+        app:layout_constraintTop_toTopOf="@+id/timedetail"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/timeout_foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:text="紐西蘭牛排"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/timedetail"
+        app:layout_constraintStart_toStartOf="@+id/timedetail"
+        app:layout_constraintTop_toTopOf="@+id/timedetail"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/timeout_foodTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:text="2020/05/03"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timedetail"
+        app:layout_constraintStart_toStartOf="@+id/timedetail"
+        app:layout_constraintTop_toTopOf="@+id/timedetail"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <TextView
+        android:id="@+id/timeout_foodID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:text="編號 : A1"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timedetail"
+        app:layout_constraintStart_toStartOf="@+id/timedetail"
+        app:layout_constraintTop_toTopOf="@+id/timedetail"
+        app:layout_constraintVertical_bias="0.649" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

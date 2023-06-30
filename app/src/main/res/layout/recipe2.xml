@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/upper3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="食材"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <LinearLayout
+            android:id="@+id/stuff1_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <TextView
+                android:id="@+id/stuff1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="鮭魚  "
+                android:textColor="#FF2D2D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/stuff1_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1條"
+                android:textAlignment="textEnd"
+                android:textColor="#FF2D2D"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stuff2_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            app:layout_constraintStart_toStartOf="@+id/stuff1_container"
+            app:layout_constraintTop_toBottomOf="@+id/stuff1_container">
+
+            <TextView
+                android:id="@+id/stuff2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="小青菜"
+                android:textColor="#FF2D2D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/stuff2_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6-8棵"
+                android:textAlignment="textEnd"
+                android:textColor="#FF2D2D"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stuff3_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            app:layout_constraintStart_toStartOf="@+id/stuff2_container"
+            app:layout_constraintTop_toBottomOf="@+id/stuff2_container">
+
+            <TextView
+                android:id="@+id/stuff3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="大蒜"
+                android:textColor="#FF2D2D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/stuff3_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2瓣"
+                android:textAlignment="textEnd"
+                android:textColor="#FF2D2D"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/vieew"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fish_step1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stuff3_container" />
+
+        <View
+            android:id="@+id/vieeew"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fish_step2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vieew" />
+
+        <View
+            android:id="@+id/vieee2w"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fish_step3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vieeew" />
+
+        <View
+            android:id="@+id/vieee3w"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fish_step4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vieee2w" />
+
+        <View
+            android:id="@+id/vieee4w"
+            android:layout_width="151dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/leftbt"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vieee3w" />
+
+        <View
+            android:id="@+id/useRecipe"
+            android:layout_width="151dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/rightbt"
+            app:layout_constraintStart_toEndOf="@id/vieee4w"
+            app:layout_constraintTop_toBottomOf="@+id/vieee3w" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

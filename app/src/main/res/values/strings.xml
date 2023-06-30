@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">INFOOD</string>
+    <string name="some_id">
+        \u00E9\u00A3\u009F\n\u00E8\u00BC\u0089\n\u00E5\u0085\u00B7
+    </string>
+    <string name="userid">A1</string>
+    <string name="wareid">w1</string>
+    <string-array name="recommendType">
+        <item>日期優先</item>
+        <item>數量多優先</item>
+        <item>綜合推薦</item>
+    </string-array>
+</resources>
